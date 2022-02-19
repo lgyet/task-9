@@ -100,7 +100,7 @@ a:visited {
 a:hover, a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-} 
+}
 
 a:active {
   /* selected link */
@@ -124,7 +124,7 @@ input, textarea, select, button {
 	/* adds spacing to the button */
 	padding:  10px;
 	border-radius: 3px;
-	border-bottom: 2px solid rgba(0, 0, 0,.3)	
+	border-bottom: 2px solid rgba(0, 0, 0,.3)
 }
 
 button:hover, button:focus {
@@ -168,7 +168,7 @@ nav {
 	font-style: italic;
 	color: #401f87;
 	list-style-type: kannada;
-	
+
 }
 
 .profile-picture {
@@ -193,7 +193,7 @@ nav {
 	top: 10px;
 	float: right;
 	margin-left: 40px;
-	
+
 }
 .profile {
 	max-width: 700px;
@@ -284,6 +284,9 @@ th {
 	padding: 1px;
 }
 
+a.emph {
+	color: #357b70;
+}
 
 #contact{
 	text-align: center;
@@ -399,7 +402,7 @@ button:focus,
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  box-shadow:  2px 2px red, -.5em -0.2em .2em olive; 
+  box-shadow:  2px 2px red, -.5em -0.2em .2em olive;
   transition: all ease-in-out 0.2s;
 }
 
@@ -457,7 +460,3 @@ button:focus,
     transform: translate(100px, 48px);
   }
 }
-
-
-
-

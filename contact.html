@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
 	<title>Contact Lisa Gringls</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/png" href="my_logo.png" sizes="32x32" src="/Task 3/my_icon.png">
+	<link rel="shortcut icon" type="image/png" href="my_logo.png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lato:ital,wght@0,100;1,400&family=Sedgwick+Ave&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/21.css">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 		
 </head>
 
 <body>
 	<header class="page-header">
-	<!-- Add logo here -->
-	
-	<a href="index.html"><img class="page-header__item" src="my_logo.png" width=50px height=50px alt="logo"></a>
-		<nav class="main-navigation page-header__item">
-		   <ul role="menubar" class="navigation-list">
-		      <li role="presentation">
-		         <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="link to my home page" id="home">Home</a>
-		      </li>
-		      <li role="presentation">
-		         <a href="about.html" class="navigation-list__item" aria-label="link to my bio page" role="menuitem" id="about">About</a>
-		      </li>
-		      <li role="presentation">
-		         <a href="work.html" class="navigation-list__item" aria-label="link to my projects page" role="menuitem" id="about">Work</a>
-		      </li>
-		     <li role="presentation">
-		         <a href="contact.html" id="contact" class="navigation-list__item" aria-label="link to my contact page" role="menuitem" id="contact">Contact</a>
-		      </li>
-		   </ul>
-		</nav>
-</header> <hr>
+		<a href="index.html"><img class="page-header__item" src="my_logo.png" width=50 height=50 alt="logo"></a>
+			<nav class="main-navigation page-header__item">
+			   <ul role="menubar" class="navigation-list">
+			      <li role="presentation">
+			         <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active" aria-label="link to my home page" id="home">Home</a>
+			      </li>
+			      <li role="presentation">
+			         <a href="about.html" class="navigation-list__item" aria-label="link to my bio page" role="menuitem" id="about">About</a>
+			      </li>
+			      <li role="presentation">
+			         <a href="work.html" class="navigation-list__item" aria-label="link to my projects page" role="menuitem" id="work">Work</a>
+			      </li>
+			     <li role="presentation">
+			         <a href="contact.html" class="navigation-list__item" aria-label="link to my contact page" role="menuitem" id="contact">Contact</a>
+			      </li>
+			   </ul>
+			</nav>
+	</header> <hr>
 
 	<!-- Add your profile photo here -->
-		<img id="contact_photo" class="profile-picture" width=150px heught =150px src="img/profile-picture.jpg" alt="Lisa Gringl Portrait">
+		<img id="contact_photo" class="profile-picture" width=150 height =150 src="img/profile-picture.jpg" alt="Lisa Gringl Portrait">
 
 		<h1>Want to work together?</h1>
 		<p>Below are my social media handles and the <a href="#">inquiry box</a>
@@ -52,7 +50,7 @@
 				<input class="message" id="tel" type="tel" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9{3}-[0-9]{4}" aria-label="sample phone number format "><br>
 
 				<!-- country codes (ISO 3166) and Dial codes. -->
-				<select class="countrycode" name="countryCode" id="">
+				<select class="countrycode" name="countryCode" id="cc">
 
 					<option data-countryCode="US" value="1" Selected>USA (+1)</option>
 					<option data-countryCode="GB" value="44">UK (+44)</option>
@@ -278,34 +276,35 @@
 				</select>
 			
 				<label for="message"> Message: </label>
-				<textarea class="message" required="required" maxlength="240" placeholder="Your message. Max: 240 characters." aria-label="instructions to type your message"></textarea><br>
+				<textarea id="message" required="required" maxlength="240" placeholder="Your message. Max: 240 characters." aria-label="instructions to type your message"></textarea><br>
 
 				<!--<input type="submit" value="Send message"> -->
 
 				<button class ="button" type="button" value="Send message">Send Message</button>
 		</form>
 		
-		<div id="contact">
+		<div class="form1"><br>
 				<a href="work.html">Check out some of my code.</a>
-				<h1 id="contact">Contact</h1>
+				<h1 class="form1">Contact</h1>
 				CareerFoundry GmbH<br>
 				Kope. St 126 <br>
 				10179 Berlin <br>
 				Deutchland <br>
 				<br>
-				Tel <a href="tel:+49 30 48490 2016" aria-label="our ocmpany's international phone number"> +49 30 48490 2016</a><br>
+				Tel <a href="tel:+4930484902016" aria-label="our ocmpany's international phone number">+49 30 48490 2016</a><br>
 				Skype hello.careerfoundry <br>
 				<a href="mailto:office@careerfoundry.com">office@careerfoundry.com</a>
 		</div>
+	
 		<hr>
 		<hr>
 	<footer class="page-footer">
 		<p>Find me on</p>
 		<div class="social-media">
 			<!-- Add social media buttons here -->
-			<img src="img/github-icon.svg" width=30px height = 30px alt="Github">
-			<img src="img/twitter-icon.svg" width=30px height = 30px alt="Twitter">
-			<img src="img/linkedin-icon.svg" width=30px height = 30px alt="LinkedIn">
+			<img src="img/github-icon.svg" width=30 height = 30 alt="Github">
+			<img src="img/twitter-icon.svg" width=30 height = 30 alt="Twitter">
+			<img src="img/linkedin-icon.svg" width=30 height = 30 alt="LinkedIn">
 		</div>
 	</footer>
 

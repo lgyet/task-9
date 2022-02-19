@@ -1,4 +1,4 @@
-/* 
+/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.3.6,
 * Autoprefixer: v10.3.1
@@ -41,7 +41,6 @@ h1 {
     font-weight: 700;
     font-family: fantasy;
     color: var(--quaternary-color);
-    font-style: !important;
     text-align: left;
 }
 
@@ -58,20 +57,20 @@ h3 {
 }
 
 a {
-  color: var(--quaternary-color, 1.5);
+  color: var(--quaternary-color);
 }
 
 a:visited {
-  color:var(--secondary-color,80%)
+  color:var(--secondary-color)
 }
 
 a:hover, a:focus {
   text-decoration: none;
-} 
+}
 
 a:active {
   /* selected link */
-  color: var(--secondary-color, 20%);
+  color: var(--secondary-color);
 }
 
 button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, .button:hover, .button:focus {
@@ -90,7 +89,7 @@ button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus, 
 }
 
 nav {
-    font-weight: 150px;
+    font-weight: 400;
     font-style: italic;
     color: darkorange;
     text-align: center;
@@ -109,9 +108,9 @@ nav {
 .about_me_item {
     text-indent: 15px;
     font-style: italic;
-    color: var(--secondary-color, 1.2);
+    color: var(--secondary-color);
     list-style-type: kannada;
-    
+
 }
 
 .profile-picture {
@@ -138,7 +137,7 @@ nav {
     top: 10px;
     float: right;
     margin-left: 40px;
-    
+
 }
 .profile {
     max-width: 700px;
@@ -173,7 +172,7 @@ nav {
 .logo {
     border-radius: 50%;
     -ms-flex-line-pack: right;
-        align-content: right;
+        align-content: flex-start;
     width: 80px;
     height: 80px;
     -webkit-box-shadow: 0 4px 6px 0 rgba(64, 60, 80, .16);
@@ -197,8 +196,8 @@ nav {
 
 .page-header__item {
   -webkit-box-flex: -1;
-      -ms-flex: -1 1 200px;
-          flex: -1 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
@@ -261,10 +260,6 @@ th {
     padding: 1px;
 }
 
-
-#contact{
-    text-align: center;
-}
 
 .navigation-list__item--active {
   text-decoration: none;
@@ -364,11 +359,9 @@ th {
   }
 }
 
-#contact {
-    text-align: center;
-}
 
-%button-shared button, input[type=submit], .button {
+
+input[type=submit], .button {
   border: none;
   display: inline-block;
   font-family: 'Ubuntu', sans-serif;
@@ -396,8 +389,8 @@ button:focus,
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
   -webkit-box-shadow:  2px 2px red, -.5em -0.2em .2em olive;
-          box-shadow:  2px 2px red, -.5em -0.2em .2em olive; 
-  -webkit-transition: all ease-in-out 0.2s; 
+          box-shadow:  2px 2px red, -.5em -0.2em .2em olive;
+  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 
@@ -443,21 +436,34 @@ form {
     margin: 20px 0;
 }
 
+#ctr {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: var(--magenta);
+    line-height: 20px;
+    width: 250px;
+    margin: 20px 0;
+}
+
+
 p {
     font-family: 'Sedgwick Ave', cursive;
     font-weight: 400;
     background: var(--primary-color, 50%);
     color: var(--quaternary-color);
     -ms-flex-line-pack: left;
-        align-content: left;
+        align-content: flex-start;
 }
 
-.message, .message1 {
+#message, #message1 {
     font-style: italic;
     text-align: left;
     font-weight: bold;
     font-size: 14px;
-    color: var(--tertiary-color, 80%);
+    color: var(--tertiary-color);
     width: 240px;
     font-weight: 400;
     line-height: 25px;
@@ -480,11 +486,11 @@ p {
 .form, .form1 {
     font-style: italic;
     text-align: left;
-    font-weight: 50%;
+    font-weight: 400;
     color: var(--secondary-color);
 }
 
-.form1 {
+.centered, .form1 {
     text-align: center;
 }
 
@@ -567,4 +573,3 @@ input, textarea, select, button {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
