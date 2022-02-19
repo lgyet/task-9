@@ -452,7 +452,7 @@ p {
         align-content: left;
 }
 
-.message {
+.message, .message1 {
     font-style: italic;
     text-align: left;
     font-weight: bold;
@@ -464,6 +464,10 @@ p {
     margin: 10px 0;
 }
 
+.message1, .button1 {
+    text-align: center;
+}
+
 #tel {
     width: 185px;
 }
@@ -473,11 +477,15 @@ p {
     margin: 10px 0;
 }
 
-.form {
+.form, .form1 {
     font-style: italic;
     text-align: left;
     font-weight: 50%;
     color: var(--secondary-color);
+}
+
+.form1 {
+    text-align: center;
 }
 
 input, textarea, select, button {
