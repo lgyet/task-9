@@ -12,7 +12,7 @@ Secondary Color (Purple): #322e8c;
 Tertiary Color (Green): #30cc1f;
 Quaternary color (Dark blue): #006093;
 Quinary color (indigo): #28827e;
-Magenta:  #d63cc7;
+Magenta:  #821b82;
 Senary, septenary, octonary, nonary, and denary
  */
 
@@ -24,7 +24,7 @@ Senary, septenary, octonary, nonary, and denary
   --quaternary-color:  #006093;
   --hover-brightness: 1.2;
   --white-color: #ffffff;
-  --magenta: #d63cc7;
+  --magenta: #821b82;
   --sky-blue: #1A5F7A;
 }
 
